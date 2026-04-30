@@ -33,9 +33,9 @@
 ---
 
 ## <img width="28" alt="image" src="https://github.com/user-attachments/assets/44ee562e-a94d-418a-9c32-45a881244b3d"/> Acesse ao projeto
-Deploy: Em manutenção!
+Deploy: https://devrodrigocarvalho.github.io/devclub-quarto-projeto/
 <br/>
-GitHub: Em manutenção!
+GitHub: https://github.com/DevRodrigoCarvalho/devclub-quarto-projeto/
 
 ---
 
