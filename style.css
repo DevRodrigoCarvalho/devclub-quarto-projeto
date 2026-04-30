@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cardo", serif;
+}
+body {
+    background-image: linear-gradient(90deg, #f5cbe0, #e8e4b2, #865872);
+    margin-top: 140px;
+}
+.big-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dice {
+    width: 30vw;
+}
+#graceful {
+    width: 350px;
+}
+#skull {
+    width: 320px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.text h2 {
+    color: #1e0c13;
+    font-size: 4.5vw;
+    font-weight: 700;
+}
+.text p {
+    color: #1e0c13;
+    font-size: 2vw;
+    font-weight: 600;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  opacity: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+input {
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.enter-the-number {
+    width: 13vw;
+    height: 5vh;
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #5642fd;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+.enter-the-number::placeholder {
+    text-align: center;
+    color: #ffffff;
+}
+#between {
+    margin-right: 10px;
+}
+#and {
+    background-color: #da1d34;
+}
+.click {
+    width: 18vw;
+    height: 6vh;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #b06b5c;
+    color: #ffffff;
+    font-weight: 700;
+    font-style:italic;
+}
+.click:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: #b37c5f;
+    color: #ffffff;
+}
+
+.result {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.result-image {
+    width: 40px;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.result-image.hide {
+    opacity: 0;
+}
+
+.result-number {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 0.3s ease, transform 0.4s ease;
+    font-size: 35px;
+}
+
+.result-number.show {
+    opacity: 1;
+    transform: scale(1.0);
+}
+/* ================= DESKTOP (mim-width: 1101px)) ================= */
+@media (min-width: 1101px) {
+    .click {
+        width: 12vw;
+        height: 6vh;
+        font-size: 2vw;
+    }
+}
+/* ================= TABLET ((min-width: 481px) and (max-width: 1100px)) ================= */
+@media ((min-width: 481px) and (max-width: 1100px)) {
+    body {
+        margin-top: 140px;
+    }
+    .big-box {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    #graceful {
+        width: 34vw;
+    }
+    #skull {
+        width: 32vw;
+    }
+    .enter-the-number {
+        width: 15vw;
+        height: 5vh;
+        font-size: 2.5vw;
+    }
+    .click {
+        width: 12vw;
+        font-size: 2.5vw;
+    }
+}
+/* ================= MOBILE (max-width: 480px) ================= */
+@media (max-width: 480px) {
+    body {
+        margin-top: 180px;
+    }
+    .big-box {
+        width: 99vw;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    #graceful {
+        width: 48vw;
+    }
+    #skull {
+        width: 45vw;
+    }
+    .text h2 {
+        font-size: 9vw;
+        font-weight: 700;
+    }
+    .text p {
+        font-size: 5vw;
+    }
+    .enter-the-number {
+        width: 40vw;
+        height: 5vh;
+        font-size: 5vw;
+        border-radius: 5px;
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+    #between {
+    margin-right: 0;
+    }
+    .click {
+        width: 25vw;
+        height: 6vh;
+        font-size: 5vw;
+    }
+    .result-number {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 0.3s ease, transform 0.4s ease;
+    font-size: 6vw;
+    }
+}

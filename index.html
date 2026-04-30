@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="./assets/dice_1.webp" type="image/png"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Sorteador numérico</title>
+</head>
+<body>
+    <!--Link do projeto no Figma: https://www.figma.com/design/vQKpjfiPgpLIAXhcldi43Z/DevSorteio?node-id=0-1&p=f&t=aYOuOJVDSCMbAlA2-0-->
+    <main>
+        <section class="big-box">
+            <div class="images">
+                <img class="dice" id="graceful" src="./assets/dado-gracioso_1.webp" alt="dice_graceful">
+                <img class="dice" id="skull" src="./assets/dado-caveira_1.webp" alt="dice_skull">
+            </div>
+            <div class="text">
+                <h2>Sorteador numérico</h2>
+                <p>Sorteie um número abaixo:</p>
+            </div>
+            <div class="min-max">
+                <input class="enter-the-number" id="between" type="number" min="0" placeholder="min">
+                <input class="enter-the-number" id="and" type="number" min="0" placeholder="max">
+            </div>
+            <button class="click" onclick="number_generator()">Sortear</button>
+            <div class="result">
+                <img class="result-image" src="./assets/interrogacao_1.webp" alt="?">
+                <span class="result-number"></span>
+            </div>
+        </section>
+    </main>
+</body>
+    <script src="./script.js"></script>
+</html>
